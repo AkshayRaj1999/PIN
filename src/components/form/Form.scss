@@ -1,0 +1,55 @@
+@import "../../assets/sass/variable";
+@import "../../assets/sass/mixins";
+
+.form__container {
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .input__field__wrapper {
+      position: relative;
+      margin-bottom: 20px;
+      input {
+        border: 1px solid $black-color;
+        border-radius: 20px;
+        width: 100%;
+        height: 66px;
+        padding-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: $black-color;
+        font-size: $base-font-size;
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+          box-shadow: unset !important;
+          -webkit-box-shadow: 0 0 0 66px white inset !important;
+          -webkit-text-fill-color: $black-color !important;
+        }
+      }
+
+      label {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: $white-color;
+        padding: 5px 39px 5px 13px;
+        transform: translateY(-50%) translateX(32px);
+      }
+      p{
+        margin-bottom: 0;
+        font-size: 13px;
+      }
+    }
+    button{
+        margin-top: 6px;
+        margin-left: auto;
+        svg{
+            margin-left: 31px;
+        }
+    }
+  }
+}

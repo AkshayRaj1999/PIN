@@ -1,0 +1,9 @@
+@import "../../assets/sass/variable";
+@import "../../assets/sass/mixins";
+
+
+.primary__button{
+    @include primary__button;
+    padding: 8px 16px 8px 20px;
+    line-height: 17.58px;
+}

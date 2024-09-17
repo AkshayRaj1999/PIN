@@ -1,0 +1,51 @@
+@import "./variable";
+
+@mixin footer__nav__links {
+  font-size: $base-font-size;
+  color: $ternary-color;
+  font-weight: $base-font-weight + 100;
+  line-height: $base-line-height;
+  font-family: $base-font-family;
+}
+@mixin footer__nav__title {
+  font-size: $base-font-size;
+  color: $black-color;
+  font-weight: $base-font-weight + 100;
+  line-height: $base-line-height;
+  font-family: $base-font-family;
+}
+
+@mixin section__title {
+  font-size: 36px;
+  font-weight: $base-font-weight + 100;
+  line-height: 42.19px;
+  color: $primary-color;
+  margin-bottom: 36px;
+}
+@mixin section__subtitle {
+  font-size: $base-font-size+4;
+  font-weight: $base-font-weight+100;
+  line-height: 23.44px;
+  color: $black-color;
+  margin-bottom: 36px;
+}
+@mixin primary__button{
+  color: $white-color;
+  background-color: $primary-color;
+  font-size: $base-font-size - 1;
+  font-weight: $base-font-weight + 100;
+  border-radius: 10px;
+  line-height: 17.58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin section__padding {  
+  padding-top: 78px;  
+  padding-bottom: 152px;  
+  
+  @media (max-width: 960px) {  
+    padding-top: 0; 
+    padding-bottom: 0;
+  }  
+}

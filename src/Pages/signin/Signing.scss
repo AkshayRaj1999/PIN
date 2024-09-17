@@ -1,0 +1,14 @@
+@import "../../assets/sass/variable";
+@import "../../assets/sass/mixins";
+
+.section__singing{
+    @include section__padding;
+}
+.employer__form__container{
+    h3{
+        @include section__title;
+    }
+    p{
+        @include section__subtitle;
+    }
+}
